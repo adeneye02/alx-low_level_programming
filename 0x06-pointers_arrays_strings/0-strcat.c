@@ -31,8 +31,6 @@ char *_strcat(char *dest, char *src)
 		}
 		*dest = '\0';
 
-		putchar("\n");
-
 		return (s);
 
 }
