@@ -1,36 +1,30 @@
+#include "main.h"
+
 #include <stdio.h>
 
-#include <stdlib.h>
-
 /**
- * main - prints multiplication
- * of two numbers
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: returns 0
+ * main - program that prints all arguments it receives
+ * @argc: argument count
+ * @argv: argunment vector
+ * Return: int
  */
 
 int main(int argc, char *argv[])
 
 {
 
-		int i, j, mul;
+		int count = 0;
 
-		if (argc <= 2)
+		if (argc > 0)
 		{
-		printf("Error\n");
+		while (count < argc)
+		{
+		printf("%s\n", argv[count]);
 
-		return (1);
+		count++;
 
 		}
-		i = atoi(argv[1]);
-
-		j = atoi(argv[2]);
-
-		mul = i * j;
-
-		printf("%d\n", mul);
-
+		}
 		return (0);
 
 }
